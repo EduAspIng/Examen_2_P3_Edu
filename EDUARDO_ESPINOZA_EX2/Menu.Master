@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menu.master.cs" Inherits="EDUARDO_ESPINOZA_EX2.Menu" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <!--Link del menu css-->
+    <link href="CSS/Diseño_MenuCSS.css" rel="stylesheet" />
+    <!--Link del bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Link del gridview css-->
+    <link href="CSS/Gridview.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar bg-dark border-bottom border-body">
+        <div class="container text-center">
+             <ul class="menu container text-center">
+                <li><a class="button" href="tecnico.aspx">Tecnico</a></li>
+                <li><a class="button" href="usuario.aspx">Usuario</a></li>
+                <li><a class="button" href="equipo.aspx">Equipo</a></li>
+            </ul>
+        </div><!--menu-->
+        <div>
+            </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
